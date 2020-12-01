@@ -2,8 +2,17 @@ list1 = [1844, 1123, 1490, 1478, 1108, 1120, 1594, 1101, 1831, 1146, 1084, 1535,
 
 result = 2020
 
+# part one
 for x in list1:
     for y in list1:
         if x+y == result:
             print(x,y)
             print(x*y)
+
+# part two
+for x in list1:
+  for y in list1:
+    for z in list1:
+      if x+y+z == result:
+        print(x,y,z)
+        print(x*y*z)
